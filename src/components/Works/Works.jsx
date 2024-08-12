@@ -9,7 +9,7 @@ import nail5 from '../../images/nailimg/nail5.jpg';
 
 const flickityOptions = {
   initialIndex: 2,
-  // Додайте інші опції, якщо потрібно
+  
 };
 
 const nails = {

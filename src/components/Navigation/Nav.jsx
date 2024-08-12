@@ -69,7 +69,6 @@ function Nav() {
   const formatOptionLabel = ({ label, icon }) => (
     <SC.DIV style={{ display: 'flex', alignItems: 'center' }}>
       <img src={icon} alt={label} style={{ width: 20, marginRight: 10 }} />
-      {/* {label} */}
     </SC.DIV>
   );
 
