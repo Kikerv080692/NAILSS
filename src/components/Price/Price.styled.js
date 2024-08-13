@@ -4,9 +4,9 @@ export const Wrapper = styled.div`
     padding-top: 80px;
     border: 2px solid white;
     border-radius: 10px;
-    width: 400px;
-    margin-left: 15px;
-    padding-bottom: 30px;
+    width: 360px;
+    margin: auto;
+    padding-bottom: 40px;
 
 
 h1 {

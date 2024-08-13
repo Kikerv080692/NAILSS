@@ -18,7 +18,7 @@ export const Container = styled.div`
   align-items: center;
   max-width: 430px;
   height: 100vh;
-  background-image: url('../../../public/image/nailBackground.jpg');
+  background-image: url('../../../image/nailBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 `;

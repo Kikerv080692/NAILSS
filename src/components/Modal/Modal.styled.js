@@ -7,7 +7,7 @@ export const Overlay = styled.div`
   top: 0;
   left: 0;
   z-index: 20;
-  background-image: url("../../../public/image/nailBackground.jpg");
+  background-image: url("../../../image/nailBackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 

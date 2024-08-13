@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   max-width: 430px;
   height: 100vh;
-  background-image: url('../../../public/image/nailBackground.jpg');
+  background-image: url('../../../image/nailBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   
