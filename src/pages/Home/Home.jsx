@@ -9,6 +9,7 @@ import { Register } from "../../components/Register/Register";
 import Price from "../../components/Price/Price.jsx";
 import { CalendarPage } from "../../components/CalendarPage/CalendarPage.jsx"
 import { Nailss } from "../../components/Nailss/Nailss.jsx";
+import { AboutMe } from "../../components/AboutMe/AboutMe.jsx";
 
 
 
@@ -21,8 +22,9 @@ export const Home = () => {
       <Login />
       <Nav />
       <Header />
-      <CalendarPage />
+      <AboutMe/>
       <Nailss/>
+      <CalendarPage />
       <Interesting />
       <Price />
       <Footer />

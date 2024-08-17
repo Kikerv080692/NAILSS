@@ -23,6 +23,7 @@ p{
     color: white;
     font-size: ${p => p.theme.fontSizes.ml}px;
     line-height: 1.5;
+    padding-bottom: 10px;
 }
 `
 
@@ -34,6 +35,9 @@ padding-bottom: 20px;
 p {
     line-height: 1.5;
 }
+`
+export const Advice = styled.div`
+margin-bottom: 10px;
 `
 export const TextWrapper = styled.div`
    background-color: grey;

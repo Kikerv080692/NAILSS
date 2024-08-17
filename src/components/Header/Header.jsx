@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+
 import nail from "../../images/nail.jpg";
 import * as SC from './Header.styled';
 import { useTranslation } from 'react-i18next';
@@ -24,9 +24,7 @@ const Header = () => {
           {t('header')}
         </h3>
       </SC.TextWrapperH3>
-      <SC.ButtonBox>
-        <Button>{t('buttonSchedule')}</Button>
-      </SC.ButtonBox>
+     
     </>
   );
 };

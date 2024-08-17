@@ -9,7 +9,12 @@ export const Interesting = () => {
         <SC.Header>
           <h2>{t('text1')}</h2>
         </SC.Header>
-        <h3>{t('text2')}</h3>
+        <SC.Advice>
+        <p>{t('text2')}</p>
+        </SC.Advice>
+        <SC.Advice>
+        <p>{t('text2.1')}</p>
+        </SC.Advice>
         <p>{t('text3')}</p>
       </SC.WrapperFirst>
       <div>
@@ -22,6 +27,9 @@ export const Interesting = () => {
         </SC.TextWrapper>
         <SC.TextWrapper>
           <p>{t('text4.3')}</p>
+        </SC.TextWrapper>
+        <SC.TextWrapper>
+          <p>{t('text4.4')}</p>
         </SC.TextWrapper>
       </div>
     </SC.Section>
