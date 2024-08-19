@@ -1,8 +1,11 @@
 import * as SC from './AboutMe.styled'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
+import MyWife from '../../../public/image/Mywife.jpg'
+
 export const AboutMe = () => {
   const { t } = useTranslation();
   return (
+    <SC.ALL>
     <SC.Wrapper>
       <SC.WrapperText>
         <h2>{t('aboutMe')}</h2>
@@ -14,21 +17,19 @@ export const AboutMe = () => {
         <p>{t('aboutMe2')}</p>
       </SC.WrapperText>
       <SC.WrapperText>
-        <p>Манікюр за 2 години, педикюр за 1.5 години.</p>
+        <p>{t('aboutMe3')}</p>
       </SC.WrapperText>
       <SC.WrapperText>
-        <p>Будь який дизайн на ваш смак.</p>
+        <p>{t('aboutMe4')}</p>
       </SC.WrapperText>
       <SC.WrapperText>
-        <p>Я за здорові ручки і нігті.</p>
+        <p>{t('aboutMe5')}</p>
       </SC.WrapperText>
-      <div>
-        <p></p>
-      </div>
-      <div>
-        <p></p>
-      </div>
     </SC.Wrapper>
+    <SC.WrapperFoto>
+    <img src={MyWife} alt="me" />
+    </SC.WrapperFoto>
+    </SC.ALL>
   )
 }
 
