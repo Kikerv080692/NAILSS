@@ -17,6 +17,9 @@ import slide_7 from '../../images/nailimg/nail7.jpg';
 import slide_8 from '../../images/nailimg/nail8.jpg';
 import slide_9 from '../../images/nailimg/nail9.jpg';
 import slide_10 from '../../images/nailimg/nail10.jpg';
+import slide_12 from '../../images/nailimg/nail12.jpg';
+import slide_13 from '../../images/nailimg/nail13.jpg';
+import slide_14 from '../../images/nailimg/nail14.jpg';
 
 export const Nailss = () => {
   return (
@@ -38,9 +41,9 @@ export const Nailss = () => {
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
         className="swiper-container"
       >
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <img src={slide_1} alt="slide_1" />
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <img src={slide_2} alt="slide_2" />
         </SwiperSlide>
@@ -67,6 +70,15 @@ export const Nailss = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide_10} alt="slide_6" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_12} alt="slide_6" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_13} alt="slide_6" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_14} alt="slide_6" />
         </SwiperSlide>
 
         <div className="slider-controler">
