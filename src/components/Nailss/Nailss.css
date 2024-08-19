@@ -24,6 +24,7 @@
   
   .slider-arrow {
     background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     padding: 10px;
     border-radius: 50%;
     pointer-events: auto;
@@ -32,8 +33,14 @@
   .swiper-button-next, .swiper-button-prev {
     color: white;
   }
+
+  .swiper-button-prev ion-icon, .swiper-button-next ion-icon {
+    font-size: 20px; /* Зменшує розмір іконок */
+    color: green; /* Змінює колір іконок */
+  }
   
   .swiper-pagination {
+    color: #fff;
     position: absolute;
     bottom: 10px;
     text-align: center;

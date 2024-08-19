@@ -16,7 +16,8 @@ align-items: start;
 padding-left: 20px;
 `
 export const WrapperText = styled.div`
-margin-bottom: 30px;
+margin-bottom: 10px;
+font-style: ${p => p.theme.Garamond};
 h2 {
     background: rgba(25, 100, 25, 0.5);
     border-radius: 6px;
@@ -26,10 +27,10 @@ h2 {
 `
 
 export const WrapperFoto = styled.div`
-padding-right: 20px;
+padding-right: 15px;
 img {
     max-width: 200px;
-    height: 360px;
+    height: 300px;
     border-radius: 10px;
 }
 `

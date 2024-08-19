@@ -38,9 +38,9 @@ export const Nailss = () => {
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
         className="swiper-container"
       >
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={slide_1} alt="slide_1" />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img src={slide_2} alt="slide_2" />
         </SwiperSlide>

@@ -6,7 +6,7 @@ export const theme = Object.freeze({
       monospace: 'Menlo, monospace',
       table: 'Lucida Sans Unicode, Lucida Grande, Sans-Serif',
       fancy: '"Great Vibes", cursive',
-       Garamond: 'EB Garamond, Sans-Serif'
+      Garamond: 'EB Garamond, Sans-Serif'
     },
     fontSizes: {
       xs: 12,
