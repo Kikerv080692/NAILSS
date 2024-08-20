@@ -3,9 +3,11 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+// import "swiper/css/bundle";
+import 'swiper/css/scrollbar';
 
 import './Nailss.css'
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { Controller , Pagination, Navigation } from 'swiper/modules';
 
 import slide_1 from '../../images/nailimg/nail1.jpg';
 import slide_2 from '../../images/nailimg/nail2.jpg';
@@ -25,7 +27,7 @@ export const Nailss = () => {
   return (
     <div>
       <Swiper
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[Controller , Pagination, Navigation]}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -37,7 +39,7 @@ export const Nailss = () => {
           depth: 100,
           modifier: 2.5,
         }}
-        pagination={{el:'swiper-pagination', clickable: true }}
+        pagination={{clickable: true }}
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
         className="swiper-container"
       >
