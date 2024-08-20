@@ -1,13 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// import "swiper/css/bundle";
 import 'swiper/css/scrollbar';
+import "swiper/css/effect-flip"
 
 import './Nailss.css'
-import { Controller , Pagination, Navigation } from 'swiper/modules';
+import { Controller , Pagination, Navigation, Keyboard, Mousewheel, EffectFlip } from 'swiper/modules';
 
 import slide_1 from '../../images/nailimg/nail1.jpg';
 import slide_2 from '../../images/nailimg/nail2.jpg';
@@ -27,27 +26,39 @@ export const Nailss = () => {
   return (
     <div>
       <Swiper
-        modules={[Controller , Pagination, Navigation]}
-        effect={"coverflow"}
+        modules={[Controller , Pagination, Navigation, Keyboard, Mousewheel, EffectFlip]}
+        effect={"flip"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
         slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
+        flipEffect={{
+          limitRotation: true,
+          slideShadows: true,
         }}
-        pagination={{clickable: true }}
+        // breakpoints={{
+        //   480: {slidesPerView: 1},
+        //   680:{slidesPerView: 3},
+        //   980:{slidesPerView: 6}
+        // }}
+        mousewheel= {{sensitivity: 1}}
+        keyboard= {{enabled: true, onlyInViewport: true}}
+        pagination={{clickable: true, dynamicBullets: true,
+        }}
         navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
         className="swiper-container"
       >
         <SwiperSlide>
-          <img src={slide_1} alt="slide_1" />
+          <img src={slide_12} alt="slide_6" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_9} alt="slide_6" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide_2} alt="slide_2" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slide_1} alt="slide_1" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide_3} alt="slide_3" />
@@ -68,13 +79,7 @@ export const Nailss = () => {
           <img src={slide_8} alt="slide_6" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide_9} alt="slide_6" />
-        </SwiperSlide>
-        <SwiperSlide>
           <img src={slide_10} alt="slide_6" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_12} alt="slide_6" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={slide_13} alt="slide_6" />

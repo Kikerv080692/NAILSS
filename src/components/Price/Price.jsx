@@ -11,7 +11,7 @@ function Price() {
         <tbody>
           <tr>
             <td>Маникюр</td>
-            <td>300</td>
+            <td>500</td>
           </tr>
           <tr>
             <td>Маникюр с покрытием</td>

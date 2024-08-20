@@ -7,6 +7,7 @@ export const WrapperAllCalendar = styled.div`
     margin: auto;
     padding-left: 10px;
     padding-bottom: 10px;
+    margin-bottom: 40px;
 
     @media (min-width: 1023px ){
       width: 500px;
