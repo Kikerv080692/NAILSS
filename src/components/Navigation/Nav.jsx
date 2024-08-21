@@ -86,7 +86,7 @@ const handleMenuClick = () => {
     <SC.Nav $isNavOpen={isNavOpen}>
       <SC.Navmenu $isNavOpen={isNavOpen}>
       <h4>
-        <a href="#works" >{t('nav1')}</a>
+        <a href="#works" onClick={handleMenuClick}>{t('nav1')}</a>
       </h4>
       <h4>
         <a href="#price" onClick={handleMenuClick}>{t('nav2')}</a>
