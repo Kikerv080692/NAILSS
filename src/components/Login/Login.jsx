@@ -68,7 +68,9 @@ export const Login = () => {
           </SC.ContainerForLabel>
           <SC.Button type='submit'>Log in</SC.Button>
         </SC.Form>
+        <SC.NAVLINK>
         <NavLink to="/">Home</NavLink>
+        </SC.NAVLINK>
       </SC.Container> : <></>
   )
 }

@@ -21,6 +21,9 @@ export const Container = styled.div`
   background-image: url('../../../image/nailBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  @media(min-width: 569px) and (max-width: 1600px){
+    max-width: 100%;
+  }
 `;
 
 export const Input = styled.input`

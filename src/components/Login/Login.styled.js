@@ -9,7 +9,10 @@ export const Container = styled.div`
   background-image: url('../../../image/nailBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  
+  @media(min-width: 569px) and (max-width: 1600px){
+    max-width: 100%;
+    height: 900px;
+  }
 `;
 
 export const Form = styled.form`
@@ -24,10 +27,6 @@ export const Form = styled.form`
   border-radius: 10px;
   margin: auto;
 
-  @media (max-width: 568px) {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
 `;
 export const Input = styled.input`
   max-width: 350px; 
@@ -114,4 +113,9 @@ top: 10px;
 right: 10px;
 cursor: pointer;
 color: black;
+`
+export const NAVLINK = styled.div`
+position: absolute;
+top: 600px;
+left: 150px;
 `
