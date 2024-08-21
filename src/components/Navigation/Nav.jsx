@@ -37,7 +37,9 @@ function Nav() {
     localStorage.setItem('language', language);
     setSelectedLanguage(languageOptions.find(option => option.value === language));
   };
-
+const handleMenuClick = () => {
+  setIsNavOpen(false)
+}
   const { isLoggedIn } = useAuth();
 
   const customStyles = {
@@ -84,16 +86,16 @@ function Nav() {
     <SC.Nav $isNavOpen={isNavOpen}>
       <SC.Navmenu $isNavOpen={isNavOpen}>
       <h4>
-        <a href="#works">{t('nav1')}</a>
+        <a href="#works" onClick={handleMenuClick}>{t('nav1')}</a>
       </h4>
       <h4>
-        <a href="#price">{t('nav2')}</a>
+        <a href="#price" onClick={handleMenuClick}>{t('nav2')}</a>
       </h4>
       <h4>
-        <a href="#contact">{t('nav3')}</a>
+        <a href="#contact" onClick={handleMenuClick}>{t('nav3')}</a>
       </h4>
       <h4>
-        <a href="#" onClick={toggleModalSchedule} >{t('nav4')}</a>
+        <a href="#" onClick={() => { toggleModalSchedule(); handleMenuClick(); }} >{t('nav4')}</a>
       </h4>
 
       </SC.Navmenu>

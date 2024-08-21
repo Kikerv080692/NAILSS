@@ -1,4 +1,4 @@
-import React from "react";
+
 import instagram from "../../images/instagram_icon.png";
 import telegram from "../../images/telegram.png";
 import * as SC from './Contacts.styled'

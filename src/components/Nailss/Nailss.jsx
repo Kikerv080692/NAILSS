@@ -24,7 +24,7 @@ import slide_14 from '../../images/nailimg/nail14.jpg';
 
 export const Nailss = () => {
   return (
-    <div>
+    <div id="works">
       <Swiper
         modules={[Controller , Pagination, Navigation, Keyboard, Mousewheel, EffectFlip]}
         effect={"flip"}

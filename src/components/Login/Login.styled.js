@@ -16,16 +16,21 @@ export const Form = styled.form`
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 380px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin-left: 15px;
+  margin: auto;
+
+  @media (max-width: 568px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 `;
 export const Input = styled.input`
-  width: 100%;
+  max-width: 350px; 
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 5px;

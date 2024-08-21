@@ -35,6 +35,7 @@ export const Nav = styled.nav`
     margin: 0;
     cursor: pointer;
     position: relative;
+  
     &:hover::after {
       transform: scaleX(1);
     }
@@ -59,6 +60,7 @@ export const Nav = styled.nav`
     transition: color 0.3s ease;
     &:hover {
       color: #00ffff;
+      
     }
   }
 `;
