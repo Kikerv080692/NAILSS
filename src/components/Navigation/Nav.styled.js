@@ -34,8 +34,7 @@ export const Nav = styled.nav`
   h4 {
     margin: 0;
     cursor: pointer;
-    position: relative;
-  
+
     &:hover::after {
       transform: scaleX(1);
     }
@@ -48,7 +47,7 @@ export const Nav = styled.nav`
       height: 2px;
       background: ${(p) => p.theme.colors.hoverLink};
       transform: scaleX(0);
-      transform-origin: bottom right;
+      /* transform-origin: bottom right; */
       transition: transform 0.3s ease-out;
     }
 
@@ -60,7 +59,6 @@ export const Nav = styled.nav`
     transition: color 0.3s ease;
     &:hover {
       color: #00ffff;
-      
     }
   }
 `;
@@ -68,7 +66,7 @@ export const Navmenu = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap:35px;
+  gap:44px;
   
 
 @media(max-width: 568px){
@@ -79,6 +77,11 @@ export const Navmenu = styled.div`
   padding-top:80px;
   background: ${(p) => p.theme.colors.headers};
   ` }
+  h4 a {
+    position: absolute;
+    width: 100%;
+    left: 170px;
+  }
 }`
 
 export const DIV = styled.div`
