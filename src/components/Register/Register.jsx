@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/authOperation";
 import { useLocation } from "react-router-dom";
 import * as SC from "./Register.styled";
+import { usePasswordToggle } from "./hooks/usePasswordToggle";
 
 export const Register = () => {
   const dispatch = useDispatch();
@@ -10,7 +11,9 @@ export const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const location = useLocation();
- 
+ const [ InputType, Icon ] = usePasswordToggle()
+
+
   const handleInputChange = (e) => {
     const { value, name } = e.target;
     switch (name) {
@@ -57,6 +60,7 @@ export const Register = () => {
             value={email}
             onChange={handleInputChange}
             id="Email"
+            
           />
           <SC.Label htmlFor="Email">Email</SC.Label>
         </SC.ContainerForInputLabel>
@@ -64,12 +68,13 @@ export const Register = () => {
           <SC.FormInput
             id="Password"
             name="Password"
-            type="text"
+            type={InputType}
             placeholder=" "
             value={password}
             onChange={handleInputChange}
           />
           <SC.Label htmlFor="Password">Password</SC.Label>
+          <SC.SpanPassword>{Icon}</SC.SpanPassword>
         </SC.ContainerForInputLabel>
         <SC.Button type="submit">Register</SC.Button>
       </SC.Form>

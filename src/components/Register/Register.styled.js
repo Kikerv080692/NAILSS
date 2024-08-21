@@ -100,4 +100,14 @@ export const Label = styled.label`
   cursor: text;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   background-color: #f9f9f9;
+  pointer-events: none;
 `;
+
+export const SpanPassword = styled.span`
+position: absolute;
+z-index: 1000;
+top: 10px;
+right: 10px;
+cursor: pointer;
+color: black;
+`

@@ -3,12 +3,13 @@ import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/authOperation";
 import { NavLink, useLocation } from "react-router-dom";
 import * as SC from './Login.styled'
+import { usePasswordToggle } from "../Register/hooks/usePasswordToggle";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const isLocation = useLocation()
- 
+  const [ InputType, Icon ] = usePasswordToggle()
 const dispatch = useDispatch()
 
   const handleInputChange = (e) => {
@@ -52,7 +53,7 @@ return (
           </SC.ContainerForLabel>
           <SC.ContainerForLabel >
             <SC.FormInput
-              type="password"
+               type={InputType}
               autoComplete="off"
               placeholder=" "
               name="Password"
@@ -63,6 +64,7 @@ return (
             <SC.Label htmlFor="Password" >
               Password
             </SC.Label>
+            <SC.SpanPassword>{Icon}</SC.SpanPassword>
           </SC.ContainerForLabel>
     <SC.Button type='submit'>Log in</SC.Button>
   </SC.Form>
