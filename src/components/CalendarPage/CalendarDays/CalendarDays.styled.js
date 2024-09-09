@@ -13,5 +13,7 @@ export const CellWrapper = styled.div`
   min-width: 15px;
   min-height: 15px;
   cursor: pointer;
+  color: ${p => (p.isCurrentMonth ? p.theme.colors.text : 'rgba(0, 0, 0, 0.3)')}; /* Текст поточного місяця нормальний, інші прозорі */
+  
   
 `

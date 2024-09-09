@@ -15,6 +15,11 @@ export const CalendarGrid = ({ today, startDay }) => {
     return moment().isSame(day, "day");
   };
 
+  const isCurrentMonth = (day) => {
+    return today.isSame(day, "month");
+  };
+
+
   return (
     <div>
     <SC.WrapperWeekDays>
@@ -31,8 +36,11 @@ export const CalendarGrid = ({ today, startDay }) => {
         </SC.WrapperWeekDays>
       <SC.CalendarGrid>
         {daysArray.map((dayItem) => (
-          <CalendarDays key={dayItem.unix()}  isCurrentDay={isCurrentDay}  dayItem={dayItem} 
-          
+          <CalendarDays 
+          key={dayItem.unix()}  
+          isCurrentDay={isCurrentDay}  
+          dayItem={dayItem} 
+          isCurrentMonth={isCurrentMonth}
           />
         ))}
       </SC.CalendarGrid>

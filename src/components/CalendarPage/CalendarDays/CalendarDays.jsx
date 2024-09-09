@@ -4,7 +4,7 @@ import * as SC from './CalendarDays.styled'
 import { CastomModal } from "../../Modal/CastomModal";
 import { Form } from "../../Form/Form";
 
-export const CalendarDays = ({ isCurrentDay, dayItem}) => {
+export const CalendarDays = ({ isCurrentDay, dayItem, isCurrentMonth}) => {
 
   const [isOpenModal, setIsOpenModal] = useState(false);
 
@@ -15,7 +15,7 @@ export const CalendarDays = ({ isCurrentDay, dayItem}) => {
 
 
   return (
-    <SC.CellWrapper >
+    <SC.CellWrapper  isCurrentMonth={isCurrentMonth(dayItem)}>
       <div onClick={toggleModal}>
         {isCurrentDay(dayItem) ? (
           <SC.CurrentDay>{dayItem.format("D")}</SC.CurrentDay>
