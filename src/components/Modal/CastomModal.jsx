@@ -44,7 +44,7 @@ useEffect(() => {
 
   return createPortal(
     <SC.Overlay onClick={closeOnClick}>
-      <SC.Inner>
+      <SC.Inner className="inner-modal">
         {children}
         <SC.CloseBtn type='button'onClick={toggleModal}>X</SC.CloseBtn>
       </SC.Inner>

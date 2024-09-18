@@ -36,6 +36,7 @@ export const Inner = styled.div`
   }
 
   @media (min-width: 400px) {
+    margin-top: 60px;
     position: fixed;
     top: 50%; 
     transform: translate(-50%, -50%);
