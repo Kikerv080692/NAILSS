@@ -26,6 +26,22 @@ if(e.target === e.currentTarget){
 }
 }
 
+useEffect(() => {
+  const handleResize = () => {
+    const height = window.innerHeight;
+    const innerModal = document.querySelector('.inner-modal');
+    if (innerModal) {
+      innerModal.style.maxHeight = `${height - 100}px`; 
+    }
+  };
+  
+  window.addEventListener('resize', handleResize);
+  
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
+
   return createPortal(
     <SC.Overlay onClick={closeOnClick}>
       <SC.Inner>

@@ -24,18 +24,21 @@ export const Inner = styled.div`
   border-radius: 5px;
   max-width: 1200px;
   max-height: auto;
+  overflow: auto;
+  max-height: 90vh;
   background-color: ${(p) => p.theme.colors.modalBackground};
 
   @media (min-width: 1024px) {
     margin-top: 60px;
-  top: 45%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
 
   }
 
   @media (min-width: 400px) {
-    margin-top: 60px;
     position: fixed;
-    top: 320px;
+    top: 50%; 
+    transform: translate(-50%, -50%);
   }
 `;
 
